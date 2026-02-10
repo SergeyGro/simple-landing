@@ -11,7 +11,8 @@ body {
 
 header, main, footer{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 a {
@@ -52,13 +53,33 @@ a {
     color: white;
 }
 
-.easydraw-content{
-    margin-top: 80px;
+.main-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .easydraw-content-text {
     display: flex;
     justify-content: space-between;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+.easydraw-content-text-h {
+    font-size: 110px;
+    position: relative;
+    top: 20px;
+    color: #8C1D18;
+}
+
+.easydraw-content-text-p {
+    max-width: 209px;
+    text-align: end;
+}
+
+.easydraw-content-text-p-subtitle {
+    margin-top: 40px;
+    font-size: 33px;
 }
 
 .easydraw-content-block {
@@ -81,4 +102,112 @@ a {
     padding: 30px 25px;
     background-color: #EDEDED;
     border-radius: 20px;
+}
+
+.easydraw-content-img1 {
+    position: relative;
+    right: 12px;
+}
+
+.easydraw-content-img2 {
+    position: relative;
+    right: 24px;
+}
+
+.easydraw-content-img3 {
+    position: relative;
+    right: 36px;
+}
+
+.easydraw-content-block-main-text-p {
+    max-width: 250px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.easydraw-marker-text {
+    max-width: 503px;
+}
+
+.star-img-block {
+    max-width: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.easydraw-marker-text-p {
+    color: gray;
+}
+
+.easydraw-marker-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.easydraw-marker-content-block {
+    max-width: 428px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.easydraw-marker-content-block-section {
+    background-color: #EDEDED;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 13px;
+}
+
+.main-block-gray {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #EDEDED;
+}
+
+.advantages-easydraw {
+    display: flex;
+    height: 770px;
+}
+
+.advantages-easydraw-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.advantages-easydraw-main-content-h {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.advantages-easydraw-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 250px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 0 10px;
+    margin-left: 24px;
+}
+
+.advantages-easydraw-content-img {
+    max-height: 250px;
+}
+
+.advantages-easydraw-content-h {
+    color: #8C1D18;
+    margin-bottom: 40px;
+}
+
+.advantages-easydraw-content-p {
+    color: gray;
 }
