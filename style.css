@@ -15,6 +15,10 @@ header, main, footer{
     flex-direction: column;
 }
 
+h1 {
+    font-size: 30px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -79,7 +83,6 @@ a {
 
 .easydraw-content-text-p-subtitle {
     margin-top: 40px;
-    font-size: 33px;
 }
 
 .easydraw-content-block {
@@ -210,4 +213,118 @@ a {
 
 .advantages-easydraw-content-p {
     color: gray;
+}
+
+.arrow-btn-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120px;
+    width: 100%;
+}
+
+.arrow-btn {
+    -webkit-appearance: none;
+		-moz-appearance: none;
+			appearance: none;
+		border: 0;
+		border-radius: 20px;
+		background: #8C1D18;
+        width: 40px;
+        height: 40px;
+        font-size: 26px;
+        color: white;
+        padding-bottom: 3px;
+}
+
+.reviews-section-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-section {
+    display: flex;
+    justify-content: start;
+    background-color: #EDEDED;
+    max-width: 428px;
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.reviews-section-img {
+    max-height: 225px;
+}
+
+.reviews-section-content {
+    margin: 0 24px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews-section-text-name {
+    color: #8C1D18;
+    margin-bottom: 22px;
+}
+
+.reviews-section-text-company {
+    color: gray;
+}
+
+.ending-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ending-main-h {
+    max-width: 353px;
+}
+
+.ending-main-content {
+    max-width: 428px;
+    width: 100%;
+}
+
+.ending-main-content-p {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #EDEDED;
+}
+
+.nav-footer {
+    padding: 40px 0;
+}
+
+.nav-footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-footer-top-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer-top-block-a {
+    margin-bottom: 15px;
+}
+
+.nav-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-footer-bottom-copyright {
+    display: flex;
+    align-items: end;
+}
+
+.img-copyright {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
 }
