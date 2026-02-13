@@ -75,6 +75,7 @@ a {
     position: relative;
     top: 24px;
     color: #8C1D18;
+    margin-right: 15px;
 }
 
 .easydraw-content-text-p {
@@ -89,17 +90,22 @@ a {
 .easydraw-content-block {
     display: flex;
     justify-content: space-between;
-    height: 400px;
+    max-height: 400px;
 }
 
 .easydraw-content-block-banner {
     border-radius: 20px;
+    width: 40%;
+    height: auto;
+}
+
+.block-shadow {
+    box-shadow: 0px 2px 3px 0px gray;
 }
 
 .easydraw-content-block-main {
-    max-width: 499px;
-    width: 100%;
-    height: 100%;
+    width: 56%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,16 +153,20 @@ a {
 }
 
 .easydraw-marker-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 20px;
 }
 
+.easydraw-marker-content-half {
+    display: flex;
+    justify-content: space-between;
+}
+
 .easydraw-marker-content-block {
-    max-width: 428px;
-    width: 100%;
+    /* max-width: 428px; */
+    width: 48%;
+    height: auto;
     margin-top: 20px;
+    border-radius: 13px;
 }
 
 .easydraw-marker-content-block-section {
@@ -165,7 +175,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 13px;
 }
 
 .main-block-gray {
@@ -177,7 +186,7 @@ a {
 
 .advantages-easydraw {
     display: flex;
-    height: 770px;
+    min-height: 770px;
 }
 
 .advantages-easydraw-main {
@@ -197,6 +206,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     max-width: 250px;
+    width: 100%;
     border-left: 2px solid white;
     border-right: 2px solid white;
     padding: 0 10px;
@@ -204,7 +214,9 @@ a {
 }
 
 .advantages-easydraw-content-img {
-    max-height: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
 }
 
 .advantages-easydraw-content-h {
@@ -246,14 +258,15 @@ a {
     display: flex;
     justify-content: start;
     background-color: #EDEDED;
-    max-width: 428px;
-    width: 100%;
+    width: 48%;
+    height: auto;
     border-radius: 16px;
     margin-top: 40px;
     margin-bottom: 24px;
 }
 
 .reviews-section-img {
+    width: auto;
     max-height: 225px;
 }
 
@@ -333,4 +346,81 @@ footer {
 
 .p-copyright {
     color: gray;
+}
+
+@media screen and (max-width: 890px) {
+    body {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .easydraw-content-text-h {
+        font-size: 116px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .easydraw-content-text-h {
+        font-size: 105px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .easydraw-content-text {
+        flex-direction: column;
+        align-items: start;
+    }
+    .easydraw-content-text-h {
+        position: static;
+        top: 0;
+        margin-right: 0;
+    }
+    .easydraw-content-text-p {
+        display: flex;
+        justify-content: space-between;
+        max-width: 660px;
+        width: 100%;
+        text-align: end;
+        margin-top: 10px;
+    }
+    .easydraw-content-text-p-subtitle {
+        margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .easydraw-content-block {
+        flex-direction: column;
+        max-height: 1600px;
+        align-items: center;
+    }
+    .easydraw-content-block-banner {
+        width: 100%;
+    }
+    .easydraw-content-block-main {
+        width: 100%;
+        padding: 30px 25px;
+    }
+    .easydraw-content-block-main-text-p {
+        margin: 40px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .easydraw-content-text-h {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .easydraw-content-text-h {
+        font-size: 80px;
+    }
 }
