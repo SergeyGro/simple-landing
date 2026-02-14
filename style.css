@@ -112,6 +112,8 @@ a {
     padding: 30px 25px;
     background-color: #EDEDED;
     border-radius: 20px;
+    background-image: url(img/Vector.png);
+    background-size: cover;
 }
 
 .easydraw-content-img1 {
@@ -156,13 +158,17 @@ a {
     margin-top: 20px;
 }
 
-.easydraw-marker-content-half {
+.easydraw-marker-content-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.easydraw-marker-content-bottom {
     display: flex;
     justify-content: space-between;
 }
 
 .easydraw-marker-content-block {
-    /* max-width: 428px; */
     width: 48%;
     height: auto;
     margin-top: 20px;
@@ -249,6 +255,10 @@ a {
         padding-bottom: 3px;
 }
 
+.arrow-btn-block-mob{
+    display: none;
+}
+
 .reviews-section-block {
     display: flex;
     justify-content: space-between;
@@ -293,12 +303,11 @@ a {
 }
 
 .ending-main-h {
-    max-width: 353px;
+    width: 40%;;
 }
 
 .ending-main-content {
-    max-width: 428px;
-    width: 100%;
+    width: 48%;
 }
 
 .ending-main-content-p {
@@ -407,9 +416,80 @@ footer {
     .easydraw-content-block-main {
         width: 100%;
         padding: 30px 25px;
+        margin-top: 23px;
+    }
+    .easydraw-content-block-main-text {
+        margin-top: 150px;
     }
     .easydraw-content-block-main-text-p {
         margin: 40px 0 20px 0;
+    }
+    .easydraw-marker-content-top {
+        flex-direction: column;
+    }
+    .easydraw-marker-content-bottom {
+        flex-direction: column-reverse;
+    }
+    .easydraw-marker-content-block {
+        width: 100%;
+    }
+    .easydraw-marker-content-block-section-p {
+        margin-top: 30px;
+    }
+    .advantages-easydraw {
+        flex-direction: column;
+        min-height: 1044px;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .advantages-easydraw-main-content-h {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .arrow-btn-block-desk {
+        display: none;
+    }
+    .arrow-btn-block-mob {
+        display: flex;
+        margin-top: 30px;
+    }
+    .advantages-easydraw-content {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .advantages-easydraw-content-right {
+        display: none;
+    }
+    .advantages-easydraw-content-p {
+        margin-bottom: 64px;
+    }
+    .reviews-section {
+        width: 100%;
+    }
+    .reviews-section-right {
+        display: none;
+    }
+    .reviews-section-text {
+        max-width: 330px;
+    }
+    .arrow-btn-block-flex-end {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .ending-main {
+        flex-direction: column;
+    }
+    .ending-main-h {
+        width: 100%;
+    }
+    .ending-main-content {
+        width: 100%;
+    }
+    .ending-main-content-p {
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 }
 
