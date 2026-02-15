@@ -46,6 +46,10 @@ a {
     justify-content: space-between;
 }
 
+.nav-header-mid-btn {
+    display: none;
+}
+
 .buy-btn {
     width: 132px;
     height: 40px;
@@ -129,6 +133,11 @@ a {
 .easydraw-content-img3 {
     position: relative;
     right: 36px;
+}
+
+.easydraw-content-block-main-photo {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .easydraw-content-block-main-text-p {
@@ -341,6 +350,10 @@ footer {
     justify-content: space-between;
 }
 
+.nav-footer-bottom-media {
+    margin-right: 24px;
+}
+
 .nav-footer-bottom-copyright {
     display: flex;
     align-items: center;
@@ -405,6 +418,10 @@ footer {
 }
 
 @media screen and (max-width: 660px) {
+    .main-section{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     .easydraw-content-block {
         flex-direction: column;
         max-height: 1600px;
@@ -491,6 +508,35 @@ footer {
         margin-top: 24px;
         margin-bottom: 24px;
     }
+    .nav-header-mid {
+        display: none;
+    }
+    .nav-header-mid-btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        -webkit-appearance: none;
+            -moz-appearance: none;
+                appearance: none;
+        border: 0;
+        border-radius: 20px;
+        background: #8C1D18;
+        color: white;
+        font-size: 26px;
+    }
+    .nav-footer-top {
+        flex-wrap: wrap;
+    }
+    .nav-footer-top-logo {
+        margin-right: 24px;
+        margin-bottom: 48px;
+    }
+    .nav-footer-top-block {
+        margin-right: 24px;
+    }
+    .nav-footer-bottom {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -500,7 +546,33 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+    .main-section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .easydraw-content-text-h {
         font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .easydraw-content-text-h {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .easydraw-content-text-h {
+        font-size: 55px;
     }
 }
