@@ -7,7 +7,7 @@
 👉 https://github.com/SergeyGro/simple-landing.git
 
 ## Скриншот
-! img/simple_landing.png
+![Скриншот лендинга](img/simple_landing.png)
 
 ## Технологии
 - HTML5
